@@ -2,7 +2,7 @@
 
 [![Packagist](https://img.shields.io/packagist/dt/globalis/chargebee-php-sdk.svg?style=flat-square)](https://packagist.org/packages/globalis/seoHnTagValidator)
 [![Latest Stable Version](https://poser.pugx.org/globalis/chargebee-php-sdk/v/stable)](https://packagist.org/packages/globalis/chargebee-php-sdk)
-[![License](https://poser.pugx.org/globalis/chargebee-php-sdk/license)](https://github.com/globalis-ms/chargebee-php-sdk/blob/master/LICENSE)
+[![License](https://poser.pugx.org/globalis/chargebee-php-sdk/license)](https://github.com/akramkies/SeoHnTagValidator/blob/main/LICENSE.md)
 
 Overview
 ------------
