@@ -51,7 +51,5 @@ CLI usage
 php run hN:validateUrl  https://kies.alwaysdata.net/
 
 # calling validateWebSite method
-php run hN:validateWebSite  https://kies.alwaysdata.net/ --only-errors   --concurrent-requests=6
+php run hN:validateWebSite  --only-errors=true   --concurrent-requests=6 https://kies.alwaysdata.net/
 ```
-
-

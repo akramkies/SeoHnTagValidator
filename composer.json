@@ -6,18 +6,9 @@
     "keywords": ["SeoHnTagValidator", "api-client"],
     "type": "library",
     "authors": [{
-            "name": "Pierre Dargham",
-            "homepage": "https://github.com/pierre-dargham/"
-        },
-        {
-            "name": "GLOBALIS media systems",
-            "homepage": "https://www.globalis-ms.com/"
-        },
-        {
-            "name": "Akram-Walid Kies",
-            "homepage": "https://github.com/akramkies/"
-        }
-    ],
+        "name": "Akram-Walid Kies",
+        "homepage": "https://github.com/akramkies/"
+    }],
     "require": {
         "symfony/dom-crawler": "^6.0",
         "symfony/finder": "^6.0",
