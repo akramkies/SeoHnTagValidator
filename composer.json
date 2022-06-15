@@ -15,7 +15,7 @@
         },
         {
             "name": "Akram-Walid Kies",
-            "homepage": "https://nathandunn.uk"
+            "homepage": "https://github.com/akramkies/"
         }
     ],
     "require": {
@@ -31,5 +31,6 @@
         "psr-4": {
             "Globalis\\SeoHnTagValidator\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
