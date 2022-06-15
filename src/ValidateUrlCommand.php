@@ -21,7 +21,7 @@ class ValidateUrlCommand extends Command
     public function __construct()
     {
         parent::__construct();
-    }
+    } 
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
