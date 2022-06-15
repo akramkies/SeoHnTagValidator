@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="globalis/SeoHnTagValidator">
-  <description>globalis/chargebee-php-sdk coding standards</description>
+  <description>globalis/SeoHnTagValidator coding standards</description>
 
   <!-- Scan all files in directory -->
   <file>.</file>
