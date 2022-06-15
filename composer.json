@@ -1,0 +1,35 @@
+{
+    "name": "globalis/seo-hn-tag-validator",
+    "version": "1.0.0",
+    "description": "SeoHnTagValidator API PHP Client",
+    "license": "MIT",
+    "keywords": ["SeoHnTagValidator", "api-client"],
+    "type": "library",
+    "authors": [{
+            "name": "Pierre Dargham",
+            "homepage": "https://github.com/pierre-dargham/"
+        },
+        {
+            "name": "GLOBALIS media systems",
+            "homepage": "https://www.globalis-ms.com/"
+        },
+        {
+            "name": "Akram-Walid Kies",
+            "homepage": "https://nathandunn.uk"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^6.0",
+        "symfony/finder": "^6.0",
+        "symfony/css-selector": "^6.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "spatie/crawler": "^7.1",
+        "symfony/console": "^6.0",
+        "symfony/framework-bundle": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Globalis\\SeoHnTagValidator\\": "src/"
+        }
+    }
+}
