@@ -17,7 +17,7 @@ Installation
 ------------
 
 ```bash
-composer require globalis/seo-hn-tag-validator
+composer require globalis/seoHnTagValidator
 ```
 
 Basic usage
