@@ -10,10 +10,10 @@ use Spatie\Crawler\CrawlObservers\CrawlObserver;
 
 class PageCrawlObserver extends CrawlObserver
 {
-    private $pages =[];
+    private $pages = [];
 
-    public function willCrawl(UriInterface $uri): void {
-        
+    public function willCrawl(UriInterface $uri): void
+    {
     }
 
     /**
@@ -26,7 +26,7 @@ class PageCrawlObserver extends CrawlObserver
     public function crawled(UriInterface $url, ResponseInterface $response, ?UriInterface $foundOnUrl = null): void
     {
         $this->pages[] = [
-            'path'=>urldecode($url)
+            'path' => urldecode($url)
         ];
     }
 
@@ -49,6 +49,5 @@ class PageCrawlObserver extends CrawlObserver
     public function getResult()
     {
         return $this->pages;
-    } 
+    }
 }
-?>

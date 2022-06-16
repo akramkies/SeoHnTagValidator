@@ -1,7 +1,4 @@
 # SeoHnTagValidator
-
-[![Packagist](https://img.shields.io/packagist/dt/globalis/chargebee-php-sdk.svg?style=flat-square)](https://packagist.org/packages/globalis/seoHnTagValidator)
-[![Latest Stable Version](https://poser.pugx.org/globalis/chargebee-php-sdk/v/stable)](https://packagist.org/packages/globalis/chargebee-php-sdk)
 [![License](https://poser.pugx.org/globalis/chargebee-php-sdk/license)](https://github.com/akramkies/SeoHnTagValidator/blob/main/LICENSE.md)
 
 Overview
@@ -17,7 +14,7 @@ Installation
 ------------
 
 ```bash
-composer require globalis/seoHnTagValidator
+composer require globalis/seo-hn-tag-validator
 ```
 
 Basic usage
@@ -38,7 +35,7 @@ print_r($res);
    $concurrent default 3
    $errors show only urls wih errors default false 
 */
-$res = $validator->validateWebSite($input->getArgument('url'),$errors[OPTIONAL],$concurrent[OPTIONAL]);
+$res = $validator->validateWebSite('https://www.example.com',$errors[OPTIONAL],$concurrent[OPTIONAL]);
 print_r($res);
 
 
@@ -48,8 +45,8 @@ CLI usage
 ------------
 ```bash
 # calling validateUrl method
-php run hN:validateUrl  https://kies.alwaysdata.net/
+php run hN:validateUrl  https://www.example.com
 
 # calling validateWebSite method
-php run hN:validateWebSite  --only-errors=true   --concurrent-requests=6 https://kies.alwaysdata.net/
+php run hN:validateWebSite  --only-errors=true   --concurrent-requests=6 https://www.example.com
 ```
