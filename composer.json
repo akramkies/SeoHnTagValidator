@@ -10,6 +10,7 @@
         "homepage": "https://github.com/akramkies/"
     }],
     "require": {
+        "php": ">=8.0",
         "symfony/dom-crawler": "^6.0",
         "symfony/finder": "^6.0",
         "symfony/css-selector": "^6.0",
@@ -17,6 +18,9 @@
         "spatie/crawler": "^7.1",
         "symfony/console": "^6.0",
         "symfony/framework-bundle": "^6.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
     },
     "autoload": {
         "psr-4": {
