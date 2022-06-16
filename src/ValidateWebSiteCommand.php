@@ -66,13 +66,13 @@ class ValidateWebSiteCommand extends Command
             }
         }
 
-        $io->table(["url","errors","is_valid","tags"], $table);
+        $io->table(["url","is valid","errors","tags"], $table);
 
-        if ($countErrors === 0) {
-            $io->success($input->getArgument('url') . " crawled successfully (0 errors)");
-        } else {
-            $io->error($input->getArgument('url') . " crawled with " . $countErrors . " error(s)");
-        }
+        ($countErrors === 0 ? (
+            $io->success($input->getArgument('url') . " crawled successfully (0 errors)")
+        ): (
+            $io->error($input->getArgument('url') . " crawled with " . $countErrors . " error(s)")
+        ));
         return Command::SUCCESS;
     }
 
