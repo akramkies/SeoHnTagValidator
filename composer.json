@@ -10,7 +10,7 @@
         "homepage": "https://github.com/akramkies/"
     }],
     "require": {
-        "php": ">=8.0",
+        "php": ">=7.3",
         "symfony/dom-crawler": "^6.0",
         "symfony/finder": "^6.0",
         "symfony/css-selector": "^6.0",
