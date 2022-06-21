@@ -12,8 +12,8 @@
     "require": {
         "php": ">=8.0",
         "symfony/dom-crawler": "^6.0",
-        "symfony/finder": "^5.4",
-        "symfony/css-selector": "^4.4",
+        "symfony/finder": "^6.0",
+        "symfony/css-selector": "^6.0",
         "guzzlehttp/guzzle": "^7.0",
         "spatie/crawler": "^7.1",
         "symfony/console": "^6.0",
