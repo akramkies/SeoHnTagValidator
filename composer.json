@@ -13,7 +13,7 @@
         "php": ">=7.3",
         "symfony/dom-crawler": "^6.0",
         "symfony/finder": "^6.0",
-        "symfony/css-selector": "^5.4",
+        "symfony/css-selector": "^4.4",
         "guzzlehttp/guzzle": "^7.0",
         "spatie/crawler": "^7.1",
         "symfony/console": "^6.0",
