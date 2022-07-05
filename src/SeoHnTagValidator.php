@@ -107,11 +107,21 @@ class SeoHnTagValidator
         $result = $crawlerObserver->getResult();
 
         foreach ($result as $value) {
+            $bool = 0;
+            if(is_array(get_headers($value['path'], 1)["Content-Type"])){
+                if( str_contains(get_headers($value['path'], 1)["Content-Type"][0],"text/html")) $bool = 1;
+            }
+            else {
+                if( str_contains(get_headers($value['path'], 1)["Content-Type"],"text/html")) $bool = 1;
+            }
+
+            if($bool === 1){
                 $res = $this->validateUrl($value["path"]);
-            if ($onlyErrors === 0) {
-                array_push($globalRes, $res);
-            } else if ($res['is_valid'] === "false") {
-                array_push($globalRes, $res);
+                if ($onlyErrors === 0) {
+                    array_push($globalRes, $res);
+                } else if ($res['is_valid'] === "false") {
+                    array_push($globalRes, $res);
+                }
             }
         }
         return $globalRes;
