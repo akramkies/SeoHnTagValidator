@@ -39,7 +39,7 @@ class PageCrawlObserver extends CrawlObserver
      */
     public function crawlFailed(UriInterface $url, RequestException $requestException, ?UriInterface $foundOnUrl = null): void
     {
-        echo 'failed';
+        //dump ($requestException);
     }
 
     public function finishedCrawling(): void

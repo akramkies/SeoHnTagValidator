@@ -49,16 +49,20 @@ class ValidateWebSiteCommand extends Command
         for ($i = 0; $i < count($res); $i++) {
             $errors = "";
             $tags = "";
+
             foreach ($res[$i]["errors"] as $value) {
                 $errors = $errors . $value . "\n";
                 $countErrors++;
             }
+
             foreach ($res[$i]["tags"] as $value) {
-                $tags = $tags . "<" . $value["tag"] . ">" . $value["value"] . "</" . $value["tag"] . ">" . "\n";
+                $tags = $tags . "<" . $value["tag"] . ">" . "</" . $value["tag"] . ">" . "\n";
             }
+
             $table[$i]["url"] = $res[$i]["url"];
             $table[$i]["is_valid"] = $res[$i]["is_valid"];
             $table[$i]["errors"] = $errors;
+
             if ($tags === "") {
                 $table[$i]["tags"] = "empty tags";
             } else {
@@ -79,7 +83,6 @@ class ValidateWebSiteCommand extends Command
     protected function configure(): void
     {
         $this
-            // the command help shown when running the command with the "--help" option
             ->setHelp('This command allows you to run hN validator in the whole website')
             ->addArgument('url', InputArgument::REQUIRED, 'website url')
             ->addOption('only-errors', 'e', InputOption::VALUE_OPTIONAL, "displaying only urls with errors")
