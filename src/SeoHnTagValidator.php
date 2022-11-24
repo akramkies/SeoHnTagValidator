@@ -108,9 +108,19 @@ class SeoHnTagValidator
 
         foreach ($result as $value) {
             $bool = 0;
-            $headers = get_headers($value['path'], 1)["Content-Type"];
-            if(is_array($headers)) {
-                foreach ($headers as $header) {
+            $res = get_headers($value['path'], 1);
+
+            // Collect all headers
+            $headers = [];
+            foreach($res as $name => $header){
+                $headers[strtolower($name)] = $header;
+            }
+
+            // Get the content type header
+            $contentType = $headers['content-type'];
+
+            if(is_array($contentType)) {
+                foreach ($contentType as $header) {
                     if (str_contains($header, "text/html")) {
                         $bool = 1;
                         break;
@@ -118,7 +128,7 @@ class SeoHnTagValidator
                 }
             }
             else {
-                if (str_contains($headers, "text/html")) {
+                if (str_contains($contentType, "text/html")) {
                     $bool = 1;
                 }
             }
