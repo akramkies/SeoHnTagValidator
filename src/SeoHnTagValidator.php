@@ -108,6 +108,11 @@ class SeoHnTagValidator
 
         foreach ($result as $value) {
             $bool = 0;
+
+            if (str_starts_with('GET', $value['path'])) {
+                $value['path'] = explode(' ', $value['path'])[1];
+            }
+
             $res = get_headers($value['path'], 1);
 
             // Collect all headers
